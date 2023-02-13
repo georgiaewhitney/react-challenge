@@ -8,12 +8,12 @@ function Shouter() {
   const [inputValue, setInputValue] = useState("");
   // event handler function is defined to handle onChange event of input element
   const handleChange = (e) => {
-    // func sets new value using 'setinput'
+    // func sets new value using 'setInput'
     setInputValue(e.target.value);
   };
   // component then renders <input> and <output> elements with input value displayed in both
   return (
-    // react.fragment groups a list of children without adding extra nodes ot the DOM
+    // react.fragment groups a list of children without adding extra nodes to the DOM
     // can be shortened to <>...</>
     // <React.Fragment> requires react import (.l2)
     // <Fragment> can be used with Fragment imported

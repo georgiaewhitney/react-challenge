@@ -55,4 +55,8 @@ function MouseTracker() {
 }
 */
 
+// useRef - place to keep ref, if updated, won't rerender a component on the page
+// const listener = useRef(null);
+
+
 export default MouseTracker;
