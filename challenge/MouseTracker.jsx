@@ -1,13 +1,13 @@
 import {useState, useEffect} from "react";
 
-/*
+
 
 // THIS doesn't pass test because of body element created but DOES work
 
 function MouseTracker() {
   // useState hook creates state variable and func to update value of state variable
   // initialise state w/ array that has 0 values for x, y
-  const [coordinatesValue, setCoordinatesValue] = useState([0, 0]);
+  const [coordinatesValue, setCoordinatesValue] = useState({x:0, y:0});
 
   // useEffect hook to add the mousemove event listener to window, and remove when component unmounted
   useEffect(() => {
@@ -21,12 +21,14 @@ function MouseTracker() {
     // empty array to clean up Effect so is unmounted
   };
   }, []);
-  // component renders <ouput> element displaying clientX and clientY values
+  // component renders <output> element displaying clientX and clientY values
   return (
     <output>{coordinatesValue.x}, {coordinatesValue.y}</output>
   );
 }
-*/
+
+/*
+
 
 function MouseTracker() {
   // useState hook creates state variable and func to update value of state variable
@@ -46,10 +48,11 @@ function MouseTracker() {
   }, []);
   // match x, y to state value of coordinates
   const [xCoordinate, yCoordinate] = coordinates;
-  // render <ouput> component to display values as they update
+  // render <output> component to display values as they update
   return (
     <output>{xCoordinate}, {yCoordinate}</output>
   );
 }
+*/
 
 export default MouseTracker;
